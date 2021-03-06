@@ -1,0 +1,12 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: 'logger'
+  profiles:
+    active: @activatedProperties@
+  mvc:
+    async:
+      request-timeout: 6000000

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:alpine
+    container_name: db-learn-java
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_NAME=log_manager
+networks:
+  overlay:
